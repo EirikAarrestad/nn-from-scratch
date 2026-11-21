@@ -26,11 +26,15 @@ class Sigmoid:
         return gradient * self.forward_output * (1 - self.forward_output)
 
 class Softmax:
-    def __init__(self):
-        pass
+    def __init__(self) -> None:
+        self.forward_output = None
 
-    def forward(self):
-        pass
+    def forward(self, inputs: np.ndarray) -> np.ndarray:
+        exps = np.exp(inputs - np.max(inputs, axis=1, keepdims=True))
+        output = exps / np.sum(exps, axis=1, keepdims=True)
+        self.forward_output = output
+        return output
 
-    def backward(self):
-        pass
+    def backward(self, gradient: np.ndarray) -> np.ndarray:
+        # Gradienten regnes ut i losses.py, trenger ikke å gjøre noe her
+        return gradient
