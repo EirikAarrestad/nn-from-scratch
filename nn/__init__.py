@@ -1,0 +1,1 @@
+# Gjør nn til en pakke. Kan importere hovedklassene her for enklere tilgang.

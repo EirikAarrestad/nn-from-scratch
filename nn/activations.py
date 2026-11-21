@@ -1,0 +1,1 @@
+# Aktiveringsfunksjoner (ReLU, Sigmoid, Softmax). Hver har forward() og backward(), men ingen vekter.

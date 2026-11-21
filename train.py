@@ -1,3 +1,5 @@
+# Hovedskript: laster data, bygger nettverket, trener det og evaluerer på testsettet.
+
 from data import load_mnist
 import matplotlib.pyplot as plt
 

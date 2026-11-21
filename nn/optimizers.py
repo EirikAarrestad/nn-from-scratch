@@ -1,0 +1,1 @@
+# Optimeringsalgoritmer (SGD, senere Adam). Oppdaterer vekter og bias i hvert lag ut fra gradientene.

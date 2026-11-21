@@ -1,0 +1,1 @@
+# Gradient-sjekk: sammenligner analytiske gradienter fra backward() med numeriske (finite differences).

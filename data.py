@@ -1,3 +1,5 @@
+# Laster og forbehandler MNIST. Lagrer en kopi i data/mnist.npz så nedlasting bare skjer én gang.
+
 import os
 import numpy as np
 from sklearn.datasets import fetch_openml

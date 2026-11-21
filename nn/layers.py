@@ -1,0 +1,1 @@
+# Lag i nettverket (Dense). Hvert lag har forward() og backward(), og lagrer vekter, bias og gradientene deres.

@@ -1,0 +1,1 @@
+# Tapsfunksjoner (Cross-entropy, MSE). Regner ut tapet og gradienten med hensyn på prediksjonene.

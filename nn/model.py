@@ -1,0 +1,1 @@
+# Sequential-modell. Setter sammen lag, og har fit() for trening, predict() for prediksjon og evaluate() for treffsikkerhet.
