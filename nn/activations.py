@@ -14,14 +14,16 @@ class ReLU:
         return gradient * mask
 
 class Sigmoid:
-    def __init__(self):
-        pass
+    def __init__(self) -> None:
+        self.forward_output = None
 
-    def forward(self):
-        pass
+    def forward(self, inputs: np.ndarray) -> np.ndarray:
+        output = 1 / (1 + np.exp(-inputs))
+        self.forward_output = output
+        return output
 
-    def backward(self):
-        pass
+    def backward(self, gradient: np.ndarray) -> np.ndarray:
+        return gradient * self.forward_output * (1 - self.forward_output)
 
 class Softmax:
     def __init__(self):
