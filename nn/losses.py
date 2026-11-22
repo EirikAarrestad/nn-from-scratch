@@ -13,7 +13,7 @@ class CrossEntropy:
 
     def forward(self, y_pred: np.ndarray, y_true: np.ndarray) -> float:
         self.y_pred = y_pred
-        self.y_true = one_hot(y_true)
+        self.y_true = one_hot(y_true, n_classes=y_pred.shape[1])
 
         clipped = np.clip(self.y_pred, a_min=1e-12, a_max=1)
         per_sample_loss = np.sum(np.log(clipped) * self.y_true, axis=1)

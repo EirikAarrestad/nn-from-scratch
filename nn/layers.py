@@ -17,5 +17,3 @@ class Dense:
         self.dW = self.forward_input.T @ gradient
         self.db = np.sum(gradient, axis=0, keepdims=True)
         return gradient @ self.W.T
-
-
